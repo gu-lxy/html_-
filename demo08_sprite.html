@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS雪碧</title>
+		<style type="text/css">
+			li{
+				border: 1px solid red;
+				width: 110px;
+				height: 120px;
+				float: left;
+				list-style: none;
+				margin: 5px;
+				background-image: url(img/class.jpg);
+				background-repeat: no-repeat;
+			}
+			.bg1{
+				background-position: 5px 2px;
+			}
+			.bg2{
+				background-position: -105px 2px;
+			}
+			.bg3{
+				background-position: 5px -115px;
+			}
+			.bg4{
+				background-position: -105px -115px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			CSS Sprite，CSS雪碧，也叫CSS精灵
+				一种图片合并技术。
+		-->
+		<ul>
+			<li class="bg1"></li>
+			<li class="bg2"></li>
+			<li class="bg3"></li>
+			<li class="bg4"></li>
+		</ul>
+	</body>
+</html>

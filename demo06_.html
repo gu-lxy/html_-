@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>最大和最小</title>
+		<style type="text/css">
+			#box1{
+				border: 1px solid red;
+				width: 200px;
+				/*max-height: 300px;*/
+				min-height: 300px;
+				overflow: hidden;
+				float: left;
+				margin-right: 40px;
+			}
+			
+			#box2{
+				border: 1px solid red;
+				width: 200px;
+				/*max-height: 300px;*/
+				min-height: 300px;
+				overflow: hidden;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			max-height，
+				元素的高度：最大不会超过max-height的值
+						最小高度，看内容
+						
+			min-height，
+				元素高度：最低不会小于min-height的值
+						最大看内容的高度
+						
+			max-width，min-width
+		-->
+		<div id="box1">
+			min-width和min-height属性分别是最小宽度和最小高度。在制作网页时，如果块标签宽度固定，当没有设置高度，其高度会根据内容进行变化而无法确定高度。当高度固定时，其高度不会随着内容的增加而发生变化，因此会发生溢出现象。为了避免上述两种情况可以使用min-heigh属性来固定最小高度，当内容高度大于最小高度时会以内容高度为准。接下来通过案例来演示min-height属性，具体如例所示。
+			min-width和min-height属性分别是最小宽度和最小高度。在制作网页时，如果块标签宽度固定，当没有设置高度，其高度会根据内容进行变化而无法确定高度。当高度固定时，其高度不会随着内容的增加而发生变化，因此会发生溢出现象。为了避免上述两种情况可以使用min-heigh属性来固定最小高度，当内容高度大于最小高度时会以内容高度为准。接下来通过案例来演示min-height属性，具体如例所示。
+
+		</div>
+		<div id="box2">
+			当内容高度大于最小高度时会以内容高度为准。接下来通过案例来演示min-height属性，具体如例所示。
+
+		</div>
+	</body>
+</html>
